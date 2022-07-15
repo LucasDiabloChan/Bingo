@@ -1,0 +1,163 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#pagina{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+#secaomenu{
+    width: 90%;
+    height: auto;
+    border: 5px solid black;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+#headlist{
+    text-align: center;
+}
+
+#headlist li{
+    display: inline-block;
+    font-size: xx-large;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 20px;
+}
+
+#headgame li{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#jogadas, #fichas{
+    width: 30px;
+    height: 30px;
+}
+
+
+#bingo{
+    width: 80%;
+    height: 100vh;
+    border-spacing: 10px;
+    background-color: black;
+}
+
+#larg{
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    height: 100px;
+}
+
+#tudin{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-auto-rows: 20%;
+    grid-template-areas: 
+    "a b c d e"
+    "f g h i j"
+    "k l m n o"
+    "p q r s t"
+    "u v w x y";
+}
+
+.quad, .quadPremio{
+    width: 80%;
+    height: 80%;
+    background-color: honeydew;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo{
+    border-radius: 10px;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.botao-head{
+    border: none;
+    background-color: aqua;
+    font-size: xx-large;
+}
+
+#popup-regra, #popup-premio{
+    width: 300px;
+    height: auto;
+    position: fixed;
+    padding: 5px;
+    left: 10px;
+    top: 50px;
+    background-color: black;
+    color: white;
+    border: 2px solid red; 
+    visibility: hidden;
+    opacity: 0.9;
+}
+
+#popup-meu-premio{
+    width: 400px;
+    height: auto;
+    position: fixed;
+    padding: 5px;
+    left: 10px;
+    top: 50px;
+    background-color: black;
+    color: white;
+    border: 2px solid red; 
+    visibility: hidden;
+    opacity: 0.9;
+}
+
+/* #popup-meu-premio{
+
+} */
+
+#popup-meu-premio li{
+    margin: 0;
+    padding-right: 2px;
+    display: inline-block;
+}
+
+#popup-meu-premio ul{
+    text-align: left;
+}
+
+#popup-regra li, #popup-premio li, #popup-meu-premio li{
+    text-align: left;
+    font-size: medium;
+}
+
+.icone{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.inv{
+    border: none;
+    background-color: black;
+    color: red;
+    width: 60px;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Bingnator v1.0 </title>
+</head>
+<body id="pagina">
+    <header>
+        <section id="secaomenu">
+            <div class="menu" id="topo">
+                <ul id="headlist">
+                    <li> <button class="botao-head" id="head-regra" onmouseover="aparecerinf()" onmouseleave="sumirinf()"> Regras </button> </li>
+                    <div id="popup-regra">
+                        <ul id="help-list">
+                            <li> 1. Ao entrar no site, você possui 10 fichas para jogar. </li> <br><br>
+                            <li> 2. Cada ficha te dá 16 jogadas. </li> <br><br>
+                            <li> 3. Ao ganhar um item, ele ficará salvo no site, se você fechar o site ou atualizar a página, você perderá todos os seus prêmios. </li><br><br>
+                            <li> 4. Os prêmios são acumuláveis. </li><br><br>
+                            <li> 5. Cada vez que você clica em "Jogar de novo", uma ficha é consumida. </li><br><br>
+                            <li> 6. Você pode ou não usar todas as suas jogadas em cada partida.  </li> <br> <br>
+                            <li> 7. Cuidado para não pressionar o botão de jogar novamente sem querer!!!</li><br><br>
+                            <li> Obs: Todos os prêmios ganhos são figurativos, ou seja, é simbólico! </li>
+                        </ul>
+                    </div>
+
+                    <li> <button class="botao-head" id="head-tutorial" onmouseover="aparecerpremio()" onmouseleave="sumirpremio()"> Prêmios </button> </li>
+                    <div id="popup-premio">
+                        <ul id="win-list">
+                            <li> 1º linha: Uma roseira vietnamita </li> <br><br>
+                            <li> 2º linha: Um óculos personalizado. </li> <br><br>
+                            <li> 3º linha: Caixinha de som. </li><br><br>
+                            <li> 4º linha: Fone bluetooth. </li><br><br>
+                            <li> 1º coluna: Kit de baralho. </li><br><br>
+                            <li> 2º coluna: Bicicleta.  </li> <br><br>
+                            <li> 3º coluna: Micro-ondas. </li><br><br>
+                            <li> 4º coluna: MP5. </li><br><br>
+                            <li> Diagonal: Lamboghini Veneno. </li><br><br>
+                            <li> Obs: Todos os prêmios ganhos são figurativos, ou seja, é simbólico! </li>
+                        </ul>
+                    </div>
+
+                    <li> <button class="botao-head" id="head-tutorial" onmouseover="ganhei()" onmouseleave="perdi()"> Meus prêmios </button> </li>
+                    <div id="popup-meu-premio">
+                        <ul class="minha-list">
+                            <li> <img src="Imagens/roseira.jpg" class="icone"></li>
+                            <li> Roseira Arco-íris </li>
+                            <li> x <input type="number" class="inv" value="0" id="n-rosa"> </li>
+                        </ul>
+                        <ul class="minha-list">
+                            <li> <img src="Imagens/oculos.jpg" class="icone"></li>
+                            <li> Óculos personalizado. </li>
+                            <li> x <input type="number" class="inv" value="0" id="n-oculos"> </li>
+                        </ul>
+                        <ul class="minha-list">
+                            <li> <img src="Imagens/caixa de som.jfif" class="icone"> </li>
+                            <li> Caixinha de som. </li>
+                            <li> x <input type="number" class="inv" value="0" id="n-caixa"> </li>
+                        </ul>
+                        <ul class="minha-list">
+                            <li> <img src="Imagens/fone.jpg" class="icone"> </li>
+                            <li> Fone bluetooth. </li>
+                            <li> x <input type="number" class="inv" value="0" id="n-fone"> </li>
+                        </ul>
+                        <ul class="minha-list">
+                            <li> <img src="imagens/porta-baralho-jpg.jpeg" alt="" class="icone"></li>
+                            <li> Kit de baralho. </li>
+                            <li> x <input type="number" class="inv" value="0" id="n-cartas"> </li>
+                        </ul>
+                        <ul class="minha-list">
+                            <li> <img src="Imagens/bike.webp" alt="" class="icone"> </li>
+                            <li> Bicicleta.  </li>
+                            <li> x <input type="number" class="inv" value="0" id="n-bike"> </li>
+                        </ul>
+                        <ul class="minha-list">
+                            <li> <img src="Imagens/microondas.jpg" alt="" class="icone"> </li>
+                            <li> Micro-ondas. </li>
+                            <li> x <input type="number" class="inv" value="0" id="n-micro" readonly> </li>
+                        </ul>
+                        <ul class="minha-list">
+                            <li> <img src="Imagens/MP5.jpg" alt="" class="icone"> </li>
+                            <li> MP5. </li>
+                            <li> x <input type="number" class="inv" value="0" id="n-mp5" readonly> </li>
+                        </ul>
+                        <ul class="minha-list">
+                            <li> <img src="Imagens/lambo.jpg" alt="" class="icone"> </li>
+                            <li> Lamboghini Veneno. </li>
+                            <li> x <input type="number" class="inv" value="0" id="n-lambo"> </li>
+                        </ul>
+                    </div>
+
+                    <li> <a href="https://github.com/LucasDiabloChan/Simplicidade"> Meu github </a> </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <br><br>
+
+    <main>
+        <table id="bingo">
+            <tr id="larg">
+                <td id="altu">
+                    <h1 id="titulo"> TESTE SUA SORTE!! </h1>
+                    <ul id="headgame">
+                        <li> Jogadas restantes: </li>
+                        <li> <input type="number" id="jogadas" readonly> </li>
+                        <li> Fichas restantes: </li>
+                        <li> <input type="number" id="fichas" readonly> </li>
+                        <li>
+                            <div id="timer"></div>
+                        </li>
+                        <li>
+                            <button class="botao" id="reset" type="button" onclick="reiniciar()"> Reiniciar </button>
+                        </li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="box" id="tudin">
+                        <div class="quad" id="quad1"> 1 </div>
+                        <div class="quad" id="quad2"> 2 </div>
+                        <div class="quad" id="quad3"> 3 </div>
+                        <div class="quad" id="quad4"> 4 </div>
+                        <div class="quadPremio" id="premio1"> 1º linha </div>
+                        <div class="quad" id="quad5"> 5 </div>
+                        <div class="quad" id="quad6"> 6 </div>
+                        <div class="quad" id="quad7"> 7 </div>
+                        <div class="quad" id="quad8"> 8 </div>
+                        <div class="quadPremio" id="premio2"> 2º linha </div>
+                        <div class="quad" id="quad9"> 9 </div>
+                        <div class="quad" id="quad10"> 10 </div>
+                        <div class="quad" id="quad11"> 11 </div>
+                        <div class="quad" id="quad12"> 12 </div>
+                        <div class="quadPremio" id="premio3"> 3º linha </div>
+                        <div class="quad" id="quad13"> 13 </div>
+                        <div class="quad" id="quad14"> 14 </div>
+                        <div class="quad" id="quad15"> 15 </div>
+                        <div class="quad" id="quad16"> 16 </div>
+                        <div class="quadPremio" id="premio4"> 4º linha </div>
+                        <div class="quadPremio" id="premio5"> 1º coluna </div>
+                        <div class="quadPremio" id="premio6"> 2º coluna </div>
+                        <div class="quadPremio" id="premio7"> 3º coluna </div>
+                        <div class="quadPremio" id="premio8"> 4º coluna </div>
+                        <div class="quadPremio" id="premio9"> Diagonal </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
