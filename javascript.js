@@ -2,8 +2,6 @@
 
 // Event listener
 cataTecla = addEventListener("keydown", sorteio);
-otoque = addEventListener("touchend", sorteio);
-
 
 // Variaveis de controle
 limit = 10;
